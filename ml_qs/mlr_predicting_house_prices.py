@@ -23,7 +23,7 @@ def fit_and_predict(X_train, Y_train, X_test):
     "Fitting the linear regression model and predicting values."
     linreg = linear_model.LinearRegression()
     linreg.fit(X_train, Y_train)
-    Y_test = model.predict(X_test)
+    Y_test = linreg.predict(X_test)
     return Y_test
 
 
